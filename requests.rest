@@ -1,0 +1,28 @@
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NjQwMzQyMTQsImV4cCI6MTY2NDAzNDIzNH0.2OB13ksGdxhseDfCOnFqbGkT78mwqR5LlyCVNcqPB5g
+# Depending on the auth token we send over, we get a diff username back!
+
+###
+POST http://localhost:4000/login
+Content-Type: application/json 
+
+{
+    "username": "Paul"
+}
+###
+
+DELETE http://localhost:4000/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlBhdWwiLCJpYXQiOjE2NjQwMzAyMjh9.CJDUOM8xRTlreL8sRQuniGRNSJHyhrrQbr1UBzX4FbU"
+}
+
+
+### 
+POST http://localhost:4000/token
+Content-Type: application/json 
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlBhdWwiLCJpYXQiOjE2NjQwMzAyMjh9.CJDUOM8xRTlreL8sRQuniGRNSJHyhrrQbr1UBzX4FbU"
+}
