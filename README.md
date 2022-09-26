@@ -1,5 +1,9 @@
 # JWT Tokens 101
 
+![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+
 - The user has a count value. This is the live version of the token you are using and is unique per user.
 - When someone logs in to our app, we validate it and we send them 2 tokens.
 
